@@ -7,7 +7,7 @@ cd node_oracledb
 docker build -t="kengurukleo/node_oracledb:1.1" `.
 
 ## execute NodeJS script
-`docker run -it --rm -w /work_dir -v "$PWD":/work_dir kengurukleo/node_oracledb:1.1 node select1.js`
+`docker run -it --rm -w /work_dir -v "$PWD":/work_dir kengurukleo/node_oracledb node select1.js`
  
 * `-w /work_dir`                    :working directory inside container
 * `-v "$PWD":/work_dir`             :mount current directory (command "$PWD") to `/work_dir` directory into container

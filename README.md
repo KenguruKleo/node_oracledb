@@ -2,9 +2,11 @@
 Easy way for NodeJS scripts to work with OracleDB
 
 ## build docker image
-`git clone https://github.com/KenguruKleo/node_oracledb.git
+```
+git clone https://github.com/KenguruKleo/node_oracledb.git
 cd node_oracledb
-docker build -t="kengurukleo/node_oracledb" `.
+docker build -t="kengurukleo/node_oracledb" 
+```
 
 ## execute NodeJS script
 `docker run -it --rm -w /work_dir -v "$PWD":/work_dir kengurukleo/node_oracledb node select.js [ARGS]`
@@ -14,5 +16,5 @@ docker build -t="kengurukleo/node_oracledb" `.
 * `select.js`                       :nodeJS script `select.js`, should be in current path
 
 ## use with docker-compose
-* download `docker-compose.yml`
+* download [docker-compose.yml](https://github.com/KenguruKleo/node_oracledb/blob/master/docker-compose.yml)
 * run `docker-compose run  --rm node_oracledb node YOUR_SCRIPT [ARGS]`

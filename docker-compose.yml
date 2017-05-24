@@ -1,0 +1,8 @@
+version: "3"
+services:
+  node_oracledb:
+    image: kengurukleo/node_oracledb
+    command: node select.js
+    volumes:
+      - $PWD:/work_dir
+    working_dir: /work_dir

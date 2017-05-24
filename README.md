@@ -16,5 +16,5 @@ docker build -t="kengurukleo/node_oracledb"
 * `select.js`                       :nodeJS script `select.js`, should be in current path
 
 ## use with docker-compose
-* download [docker-compose.yml](https://github.com/KenguruKleo/node_oracledb/blob/master/docker-compose.yml)
+* download [docker-compose.yml](https://raw.githubusercontent.com/KenguruKleo/node_oracledb/master/docker-compose.yml)
 * run `docker-compose run  --rm node_oracledb node YOUR_SCRIPT [ARGS]`
